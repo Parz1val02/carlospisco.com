@@ -11,4 +11,9 @@ public class ExampController {
     public String login(){
         return "auth/login";
     }
+
+    @RequestMapping(value = {"/dashboard"},method = RequestMethod.GET)
+    public String dashboard(){
+        return "super admin/dashboard";
+    }
 }
