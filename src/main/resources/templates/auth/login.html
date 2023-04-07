@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<head th:replace="fragmentos/cabecera.html::cabecera(titulo='Inicio de Sesión')"></head>
+<head th:replace="~{fragmentos/cabecera.html::cabecera(titulo='Inicio de Sesión')}"></head>
 
   <body class="bg-white">
 
@@ -64,7 +64,7 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <div th:replace="fragmentos/scripts.html::scripts"></div>
+    <div th:replace="~{fragmentos/scripts.html::scripts}"></div>
 
   </body>
 
